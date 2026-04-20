@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHILPA – Inclusive Mobile Learning Platform</title>
+  <meta name="description" content="SHILPA is an inclusive mobile learning platform designed for children with visual, hearing, physical, and cognitive impairments." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="./assets/logo - light.png" alt="logo" class="logo-img logo-light">
+      <img src="./assets/logo-dark.png" alt="logo" class="logo-img logo-dark">
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#domain">Domain</a></li>
+      <li><a href="#milestones">Milestones</a></li>
+      <li><a href="#provide">Provide</a></li>
+      <li><a href="#documents">Documents</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile dropdown -->
+<div class="mobile-menu" role="menu">
+  <a href="#home">Home</a>
+  <a href="#introduction">Introduction</a>
+  <a href="#domain">Domain</a>
+  <a href="#milestones">Milestones</a>
+  <a href="#provide">What We Provide</a>
+  <a href="#documents">Documents</a>
+  <a href="#tools">Tools &amp; Technologies</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#team">Team</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ══════════════════════════════════════════
+     HOME / HERO
+═══════════════════════════════════════════ -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">Research Project · 2024 – 2025</div>
+      <h1 class="hero-title">SHILPA</h1>
+      <p class="hero-subtitle">Inclusive Mobile Learning Platform</p>
+      <p class="hero-desc">
+        A research-driven mobile application designed to empower children with disabilities —
+        visual, hearing, physical, and cognitive impairments — through adaptive, accessible,
+        and engaging digital learning experiences.
+      </p>
+      <div class="hero-tags">
+        <span class="tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a9.96 9.96 0 0 1 4 8 9.96 9.96 0 0 1-4 8 9.96 9.96 0 0 1-4-8 9.96 9.96 0 0 1 4-8z"/><path d="M2 12h20"/></svg>
+          Visual Impairment
+        </span>
+        <span class="tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          Hearing Impairment
+        </span>
+        <span class="tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          Physical Impairment
+        </span>
+        <span class="tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4"/><path d="M19 3h-4"/><path d="M21 9V5a2 2 0 0 0-2-2"/><path d="M3 15v4a2 2 0 0 0 2 2h4"/><path d="M21 15v4a2 2 0 0 0-2 2h-4"/><path d="M12 12h.01"/></svg>
+          Cognitive Impairment
+        </span>
+      </div>
+      <div class="hero-btns">
+        <a href="#introduction" class="btn-primary">
+          Explore Research
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#documents" class="btn-outline">
+          View Documents
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    scroll
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     INTRODUCTION
+═══════════════════════════════════════════ -->
+<section id="introduction" class="section">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-text fade-up">
+        <span class="section-label">01 · Introduction</span>
+        <h2 class="section-title">What is SHILPA?</h2>
+        <div class="divider"></div>
+        <p>
+          SHILPA (Supportive Holistic Inclusive Learning Platform Application) is a research initiative
+          focused on designing and developing a mobile-first learning platform that caters to the
+          diverse needs of children with disabilities in Sri Lanka and beyond.
+        </p>
+        <p>
+          The platform integrates multiple adaptive technologies including text-to-speech, sign language
+          support, eye-tracking input, and simplified cognitive interfaces — all within a single,
+          unified application accessible to every learner, regardless of ability.
+        </p>
+        <p>
+          Our research aims to bridge the accessibility gap in digital education by providing a
+          holistic solution that supports four key impairment categories through evidence-based
+          design methodologies and user-centered testing.
+        </p>
+      </div>
+
+      <div class="intro-stats fade-up">
+        <div class="stat-card">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Impairment categories addressed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">15%</span>
+          <span class="stat-label">Global population with disability</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">240M</span>
+          <span class="stat-label">Children with disabilities worldwide</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">1</span>
+          <span class="stat-label">Unified inclusive learning platform</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     DOMAIN
+═══════════════════════════════════════════ -->
+<section id="domain" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">02 · Domain</span>
+      <h2 class="section-title">Research Domain</h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Our research is grounded in accessibility computing, mobile HCI, and inclusive education
+        technology, exploring a multidisciplinary landscape of challenges and opportunities.
+      </p>
+    </div>
+
+    <div class="domain-grid">
+      <!-- Background – full width -->
+      <div class="domain-card">
+        <div class="domain-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <div>
+          <h3>Background</h3>
+          <p>
+            Digital learning technology has expanded rapidly, yet children with disabilities
+            remain significantly underserved. Existing applications address individual impairments
+            in isolation, creating fragmented experiences and barriers to holistic education.
+            Sri Lanka's special education sector faces compounded challenges — limited digital
+            resources, lack of localized tools, and insufficient teacher training in assistive
+            technologies. SHILPA addresses this critical gap by unifying solutions under one
+            platform, grounded in Universal Design for Learning (UDL) principles.
+          </p>
+        </div>
+      </div>
+
+      <div class="domain-card fade-up">
+        <div class="domain-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3>Research Gap</h3>
+        <p>
+          Despite growing assistive technology research, existing work lacks:
+        </p>
+        <ul>
+          <li>Unified platforms supporting multiple disability types simultaneously</li>
+          <li>Localized content for South Asian educational contexts</li>
+          <li>Adaptive AI-driven personalization for diverse learning needs</li>
+          <li>Evidence-based usability testing with children with disabilities</li>
+          <li>Parent and educator integration in the learning loop</li>
+        </ul>
+      </div>
+
+      <div class="domain-card fade-up">
+        <div class="domain-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h3>Research Problems</h3>
+        <p>
+          Core problems driving this research:
+        </p>
+        <ul>
+          <li>Inaccessible UI/UX in mainstream educational apps for children with impairments</li>
+          <li>Lack of multi-modal input (voice, gesture, gaze, touch) in learning platforms</li>
+          <li>Absence of adaptive difficulty scaling aligned to cognitive ability</li>
+          <li>No consolidated progress tracking across different disability needs</li>
+        </ul>
+      </div>
+
+      <div class="domain-card fade-up" style="grid-column: 1 / -1">
+        <div class="domain-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Research Objectives</h3>
+        <ul>
+          <li>Design and develop a cross-disability inclusive mobile learning platform for children aged 4–14</li>
+          <li>Implement screen-reader compatibility, sign language animations, and alternative input modalities</li>
+          <li>Evaluate usability and learning outcomes through controlled user testing with target populations</li>
+          <li>Develop an adaptive algorithm that personalizes content delivery based on individual learning profiles</li>
+          <li>Validate the platform's effectiveness through pre/post assessments and qualitative feedback</li>
+          <li>Provide recommendations for deploying inclusive EdTech in low-resource school environments</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     MILESTONES
+═══════════════════════════════════════════ -->
+<section id="milestones" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">03 · Milestones</span>
+      <h2 class="section-title">Project Milestones</h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        A structured roadmap guiding SHILPA from initial research through full deployment and evaluation.
+      </p>
+    </div>
+
+    <div class="milestone-track">
+      <div class="milestone-item done">
+        <div class="milestone-dot">✓</div>
+        <div class="milestone-body">
+          <span class="milestone-date">March 2024</span>
+          <h3>Project Proposal &amp; Topic Approval <span class="badge-done">Done</span></h3>
+          <p>Finalized research topic, problem statement, and scope. Received institutional approval from the Department of Computing, SLIIT.</p>
+        </div>
+      </div>
+
+      <div class="milestone-item done">
+        <div class="milestone-dot">✓</div>
+        <div class="milestone-body">
+          <span class="milestone-date">May 2024</span>
+          <h3>Literature Review &amp; Research Gap Analysis <span class="badge-done">Done</span></h3>
+          <p>Conducted comprehensive survey of existing assistive learning technologies, identifying critical gaps in multi-disability platforms.</p>
+        </div>
+      </div>
+
+      <div class="milestone-item done">
+        <div class="milestone-dot">✓</div>
+        <div class="milestone-body">
+          <span class="milestone-date">July 2024</span>
+          <h3>Progress Presentation I <span class="badge-done">Done</span></h3>
+          <p>Presented research objectives, methodology, and preliminary design concepts to the research panel. Received evaluator feedback for refinement.</p>
+        </div>
+      </div>
+
+      <div class="milestone-item done">
+        <div class="milestone-dot">✓</div>
+        <div class="milestone-body">
+          <span class="milestone-date">September 2024</span>
+          <h3>System Architecture &amp; Prototype Development <span class="badge-done">Done</span></h3>
+          <p>Designed the full system architecture and completed low/high fidelity prototypes for all four disability modules. Initial user testing sessions conducted.</p>
+        </div>
+      </div>
+
+      <div class="milestone-item active">
+        <div class="milestone-dot">●</div>
+        <div class="milestone-body">
+          <span class="milestone-date">November 2024</span>
+          <h3>Progress Presentation II</h3>
+          <p>Second evaluation checkpoint covering implemented modules, preliminary test results, and revised objectives based on user feedback.</p>
+        </div>
+      </div>
+
+      <div class="milestone-item">
+        <div class="milestone-dot">06</div>
+        <div class="milestone-body">
+          <span class="milestone-date">February 2025</span>
+          <h3>Final System Integration &amp; Evaluation</h3>
+          <p>Complete integration of all modules, full-scale usability testing with target users, and statistical analysis of learning outcome data.</p>
+        </div>
+      </div>
+
+      <div class="milestone-item">
+        <div class="milestone-dot">07</div>
+        <div class="milestone-body">
+          <span class="milestone-date">April 2025</span>
+          <h3>Final Presentation &amp; Thesis Submission</h3>
+          <p>Delivery of final research findings to the academic panel and formal submission of research thesis and all supporting documentation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     WHAT WE PROVIDE
+═══════════════════════════════════════════ -->
+<section id="provide" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">04 · What We Provide</span>
+      <h2 class="section-title">What SHILPA Offers</h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        A comprehensive set of adaptive tools and modules designed to deliver equitable,
+        personalized learning to every child.
+      </p>
+    </div>
+
+    <div class="provide-grid">
+      <div class="provide-card">
+        <div class="provide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+        </div>
+        <h3>Screen Reader &amp; TTS</h3>
+        <p>Full screen reader integration with text-to-speech in Sinhala, Tamil, and English to support learners with visual impairments throughout every activity.</p>
+      </div>
+
+      <div class="provide-card">
+        <div class="provide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+        </div>
+        <h3>Sign Language Animations</h3>
+        <p>Animated sign language avatars for Sinhala Sign Language providing visual translations of all learning content for children with hearing impairments.</p>
+      </div>
+
+      <div class="provide-card">
+        <div class="provide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <h3>Switch &amp; Eye-Gaze Input</h3>
+        <p>Alternative input methods including switch access and eye-gaze tracking allow learners with physical impairments to navigate and interact without traditional touch.</p>
+      </div>
+
+      <div class="provide-card">
+        <div class="provide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <h3>Adaptive Learning Engine</h3>
+        <p>AI-powered personalization adjusts content difficulty, pacing, and modality based on each learner's performance profile and cognitive capacity.</p>
+      </div>
+
+      <div class="provide-card">
+        <div class="provide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        </div>
+        <h3>Simplified Cognitive UI</h3>
+        <p>High-contrast, symbol-based interfaces with minimal text and clear visual cues designed specifically for learners with cognitive and intellectual disabilities.</p>
+      </div>
+
+      <div class="provide-card">
+        <div class="provide-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Parent &amp; Educator Dashboard</h3>
+        <p>Real-time progress tracking, activity reports, and curriculum management tools empowering parents and teachers to support each child's learning journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     DOCUMENTS
+═══════════════════════════════════════════ -->
+<section id="documents" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">05 · Documents</span>
+      <h2 class="section-title">Research Documents</h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Download official research deliverables, presentations, and supporting materials.
+      </p>
+    </div>
+
+    <div class="docs-grid">
+      <div class="doc-card">
+        <span class="doc-type">Proposal</span>
+        <h4>Project Proposal Document</h4>
+        <p>Initial research proposal covering background, objectives, scope, and methodology submitted for institutional approval.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PDF · 1.2 MB</span>
+          <a href="#" class="btn-download" aria-label="Download Project Proposal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <span class="doc-type">Progress Report</span>
+        <h4>Progress Presentation I</h4>
+        <p>Slides and supporting report from the first evaluation milestone, including initial design concepts and literature review outcomes.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PPTX · 4.8 MB</span>
+          <a href="#" class="btn-download" aria-label="Download Progress Presentation I">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <span class="doc-type">Progress Report</span>
+        <h4>Progress Presentation II</h4>
+        <p>Second evaluation report covering completed modules, preliminary test results, and refined system architecture.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PPTX · 5.6 MB</span>
+          <a href="#" class="btn-download" aria-label="Download Progress Presentation II">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <span class="doc-type">Research Paper</span>
+        <h4>Research Paper – Conference</h4>
+        <p>Peer-reviewed paper submitted to ICAC2024 presenting the SHILPA framework and preliminary evaluation findings.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PDF · 890 KB</span>
+          <a href="#" class="btn-download" aria-label="Download Research Paper">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <span class="doc-type">Design Docs</span>
+        <h4>System Design &amp; Architecture</h4>
+        <p>Complete system architecture diagrams, database schemas, API specifications, and module interaction flows.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PDF · 2.1 MB</span>
+          <a href="#" class="btn-download" aria-label="Download System Design Document">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <span class="doc-type">Final Thesis</span>
+        <h4>Final Research Thesis</h4>
+        <p>Complete research thesis documenting the full study — background, methodology, implementation, evaluation, and conclusions.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PDF · Coming Soon</span>
+          <a href="#" class="btn-download" aria-label="Download Final Thesis" style="opacity:0.5; pointer-events:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Pending
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TOOLS & TECHNOLOGIES
+═══════════════════════════════════════════ -->
+<section id="tools" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">06 · Tools &amp; Technologies</span>
+      <h2 class="section-title">Technologies Used</h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        A carefully selected technology stack ensuring performance, accessibility, and cross-platform reach.
+      </p>
+    </div>
+
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="tool-logo"><img src="./assets/Flutter.png" alt="Flutter"></div>
+        <h4>Flutter</h4>
+        <p>Cross-platform mobile UI framework for Android &amp; iOS</p>
+        <span class="tool-tag">Frontend</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-logo"><img src="./assets/Node.js.png" alt="Node.js"></div>
+        <h4>Node.js</h4>
+        <p>Scalable JavaScript runtime for backend API services</p>
+        <span class="tool-tag">Backend</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-logo"><img src="./assets/MongoDB.png" alt="MongoDB"></div>
+        <h4>MongoDB</h4>
+        <p>NoSQL document database for flexible data modeling</p>
+        <span class="tool-tag">Database</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-logo"><img src="./assets/Python.png" alt="Python"></div>
+        <h4>Python</h4>
+        <p>AI/ML model development for adaptive learning engine</p>
+        <span class="tool-tag">AI / ML</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-logo"><img src="./assets/TensorFlow.png" alt="TensorFlow"></div>
+        <h4>TensorFlow</h4>
+        <p>Deep learning framework for gesture and eye-gaze recognition</p>
+        <span class="tool-tag">AI / ML</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-logo"><img src="./assets/GitHub.png" alt="GitHub"></div>
+        <h4>GitHub</h4>
+        <p>Version control and collaborative development workflow</p>
+        <span class="tool-tag">DevOps</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-logo"><img src="./assets/Figma.png" alt="Figma"></div>
+        <h4>Figma</h4>
+        <p>UI/UX design and interactive prototype creation</p>
+        <span class="tool-tag">Design</span>
+      </div>
+      <div class="tool-card">
+        <div class="tool-logo"><img src="./assets/Canva.png" alt="Canva"></div>
+        <h4>Canva</h4>
+        <p>Graphic design platform for visual content creation</p>
+        <span class="tool-tag">Design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ACHIEVEMENTS
+═══════════════════════════════════════════ -->
+<section id="achievements" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">07 · Achievements</span>
+      <h2 class="section-title">Research Achievements</h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Recognition and milestones reached through the SHILPA research initiative.
+      </p>
+    </div>
+
+    <div class="achieve-list">
+      <div class="achieve-card fade-up">
+        <div class="achieve-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <div class="achieve-body">
+          <h3>Paper Accepted – ICAC 2024</h3>
+          <p>Research paper titled <em>"SHILPA: A Multi-Modal Inclusive Mobile Learning Platform for Children with Disabilities"</em> accepted at the International Conference on Advancements in Computing (ICAC 2024), Sri Lanka.</p>
+        </div>
+        <div class="achieve-badge">
+          <span class="badge-status accepted">Accepted</span>
+          <span class="achieve-year">Dec 2024</span>
+        </div>
+      </div>
+
+      <div class="achieve-card fade-up">
+        <div class="achieve-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+        </div>
+        <div class="achieve-body">
+          <h3>Best Research Project – Nomination</h3>
+          <p>Nominated for Best Research Project in the Computing category at SLIIT Research Symposium 2024, recognized for innovation in inclusive education technology.</p>
+        </div>
+        <div class="achieve-badge">
+          <span class="badge-status published">Nominated</span>
+          <span class="achieve-year">Oct 2024</span>
+        </div>
+      </div>
+
+      <div class="achieve-card fade-up">
+        <div class="achieve-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="achieve-body">
+          <h3>Ethics Clearance Obtained</h3>
+          <p>Received full ethical clearance from the SLIIT Research Ethics Committee for user testing involving children with disabilities, ensuring participant safety and data protection compliance.</p>
+        </div>
+        <div class="achieve-badge">
+          <span class="badge-status accepted">Cleared</span>
+          <span class="achieve-year">Aug 2024</span>
+        </div>
+      </div>
+
+      <div class="achieve-card fade-up">
+        <div class="achieve-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        </div>
+        <div class="achieve-body">
+          <h3>Journal Submission – Under Review</h3>
+          <p>Extended version of the research paper submitted to the <em>Journal of Accessibility and Design for All (JACCES)</em> for peer review and potential publication.</p>
+        </div>
+        <div class="achieve-badge">
+          <span class="badge-status pending">Under Review</span>
+          <span class="achieve-year">2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TEAM
+═══════════════════════════════════════════ -->
+<section id="team" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">08 · Team</span>
+      <h2 class="section-title">Research Team</h2>
+      <div class="divider"></div>
+    </div>
+
+    <p class="team-section-label">Supervisors</p>
+    <div class="team-grid supervisor-grid">
+      <div class="member-card">
+        <div class="member-avatar">SP</div>
+        <h4>Dr. S. Perera</h4>
+        <p class="member-role">Main Supervisor</p>
+        <p class="member-id">Department of Computing, SLIIT</p>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">KF</div>
+        <h4>Ms. K. Fernando</h4>
+        <p class="member-role">Co-Supervisor</p>
+        <p class="member-id">Department of Computing, SLIIT</p>
+      </div>
+    </div>
+
+    <p class="team-section-label">Research Members</p>
+    <div class="team-grid">
+      <div class="member-card">
+        <div class="member-avatar">AM</div>
+        <h4>Avishka Madhushanka</h4>
+        <p class="member-role">Team Lead · Visual Module</p>
+        <p class="member-id">IT21XXXXXX</p>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">NS</div>
+        <h4>Nethmi Samarasinghe</h4>
+        <p class="member-role">Hearing Module</p>
+        <p class="member-id">IT21XXXXXX</p>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">RD</div>
+        <h4>Rasika Dissanayake</h4>
+        <p class="member-role">Physical Module</p>
+        <p class="member-id">IT21XXXXXX</p>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">TW</div>
+        <h4>Tharushi Wickramasinghe</h4>
+        <p class="member-role">Cognitive Module</p>
+        <p class="member-id">IT21XXXXXX</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+═══════════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="fade-up">
+      <span class="section-label">09 · Contact</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <p>Have questions about our research, want to collaborate, or interested in learning more about SHILPA? We'd love to hear from you.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p class="contact-detail-label">Email</p>
+            <p class="contact-detail-val">shilpa.research@sliit.lk</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="contact-detail-label">Institution</p>
+            <p class="contact-detail-val">SLIIT, Malabe, Sri Lanka</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.82 5.83l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="contact-detail-label">Phone</p>
+            <p class="contact-detail-val">+94 11 234 5678</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <div class="contact-form">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Avishka" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Madhushanka" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="custom-select-wrapper">
+                <select id="subject" name="subject" class="hidden-select" required>
+                  <option value="" disabled selected>Select a topic</option>
+                  <option value="Research Collaboration">Research Collaboration</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Media / Press">Media / Press</option>
+                  <option value="Student Query">Student Query</option>
+                  <option value="Other">Other</option>
+                </select>
+                <div class="custom-select">
+                  <div class="custom-select-trigger">
+                    <span>Select a topic</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="select-icon"><polyline points="6 9 12 15 18 9"/></svg>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option" data-value="Research Collaboration">Research Collaboration</span>
+                    <span class="custom-option" data-value="General Inquiry">General Inquiry</span>
+                    <span class="custom-option" data-value="Media / Press">Media / Press</span>
+                    <span class="custom-option" data-value="Student Query">Student Query</span>
+                    <span class="custom-option" data-value="Other">Other</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your message here…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <p style="margin-top:12px; color: #4ade80;">Message sent successfully! We'll get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <p>
+      © 2024 – 2025 <span>SHILPA Research Group</span> · SLIIT, Sri Lanka ·
+      Department of Computing
+    </p>
+    <p style="margin-top:6px;">
+      Built with purpose — for every child, of every ability.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
