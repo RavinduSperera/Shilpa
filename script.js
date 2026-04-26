@@ -171,3 +171,5 @@ document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
     }
   });
 });
+
+lucide.createIcons();
