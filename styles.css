@@ -688,50 +688,94 @@ html.dark-mode .moon-icon {
 .btn-download svg { width: 13px; height: 13px; }
 
 /* ── Tools & Technologies ──────────────────── */
-#tools { background: var(--bg-main); }
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-.tool-card {
-  background: var(--bg-alt);
-  border: 1px solid rgba(var(--accent-rgb), 0.13);
-  border-radius: var(--radius);
-  padding: 30px 20px;
-  text-align: center;
-  transition: border-color var(--transition), transform var(--transition);
-}
-.tool-card:hover { border-color: var(--accent); transform: translateY(-4px); }
-.tool-logo {
-  width: 56px; height: 56px; margin: 0 auto 16px;
-  background: rgba(var(--accent-rgb), 0.08);
-  border-radius: 14px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.6rem;
+#tools { 
+  background: var(--bg-main);
+  padding: 80px 0;
   overflow: hidden;
-  padding: 10px;
+}
+/* Visibility Utilities */
+.mobile-only { display: none; }
+.desktop-only { display: block; }
+.tools-marquee {
+  position: relative;
+  width: 100%;
+  padding: 8px 0;
+  display: flex;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+.tools-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+}
+.tools-track.track-1 {
+  animation: scroll-left 40s linear infinite;
+}
+.tools-track.track-2 {
+  animation: scroll-right 40s linear infinite;
+}
+.tools-track:hover {
+  animation-play-state: paused;
+}
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.tool-card {
+  flex-shrink: 0;
+  width: 280px;
+  background: var(--bg-card);
+  border: 1px solid rgba(var(--accent-rgb), 0.15);
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all var(--transition);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+.tool-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(var(--accent-rgb), 0.12);
+  background: var(--bg-alt);
+}
+.tool-logo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .tool-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: transform var(--transition);
 }
-.tool-card:hover .tool-logo img {
-  transform: scale(1.1);
+.tool-content {
+  flex: 1;
 }
-.tool-card h4 { color: var(--white); margin-bottom: 6px; }
-.tool-card p  { font-size: 0.78rem; }
-.tool-tag {
-  display: inline-block;
-  margin-top: 10px;
-  background: rgba(var(--accent-rgb), 0.1);
-  border: 1px solid rgba(var(--accent-rgb), 0.2);
-  color: var(--text-tag);
-  font-size: 0.68rem; font-weight: 600;
-  letter-spacing: 0.06em; text-transform: uppercase;
-  padding: 3px 9px; border-radius: 4px;
+.tool-card h4 {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+.tool-card span {
+  font-size: 0.7rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
 }
 
 /* ── Achievements ──────────────────────────── */
@@ -1076,7 +1120,11 @@ footer span { color: var(--accent); }
   .docs-grid { grid-template-columns: 1fr; }
   .docs-header { flex-direction: column; align-items: center; text-align: center; gap: 15px; }
   .docs-filter-area { width: 100%; max-width: 320px; margin: 0 auto; }
-  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+  .mobile-only { display: block; }
+  .desktop-only { display: none; }
+  .tool-card { width: 220px; padding: 14px 18px; gap: 14px; }
+  .tool-logo { width: 36px; height: 36px; }
+  .tool-card h4 { font-size: 0.9rem; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .form-row { grid-template-columns: 1fr; }
   .intro-stats { grid-template-columns: 1fr 1fr; }
