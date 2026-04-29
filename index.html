@@ -131,7 +131,7 @@
         </p>
         <p>
           The platform integrates multiple adaptive technologies including sign language
-          support, Brail Document Genartor with Evaluations, eye-tracking input,  and simplified cognitive interfaces — all within a single,
+          support, Brail Document Genartor with Evaluations, eye-tracking input,  and simplified cognitive interfaces, all within a single,
           unified application accessible to every learner, regardless of ability.
         </p>
         <p>
@@ -190,7 +190,7 @@
             Digital learning technology has expanded rapidly, yet children with disabilities
             remain significantly underserved. Existing applications address individual impairments
             in isolation, creating fragmented experiences and barriers to holistic education.
-            Sri Lanka's special education sector faces compounded challenges — limited digital
+            Sri Lanka's special education sector faces compounded challenges, such as limited digital
             resources, lack of localized tools, and insufficient teacher training in assistive
             technologies. SHILPA addresses this critical gap by unifying solutions under one
             platform, grounded in Universal Design for Learning (UDL) principles.
@@ -475,20 +475,49 @@
 ═══════════════════════════════════════════ -->
 <section id="documents" class="section">
   <div class="container">
-    <div class="fade-up">
-      <span class="section-label">05 · Documents</span>
-      <h2 class="section-title">Research Documents</h2>
-      <div class="divider"></div>
-      <p class="section-sub">
-        Download official research deliverables, presentations, and supporting materials.
-      </p>
+    <div class="fade-up docs-header">
+      <div class="docs-title-area">
+        <span class="section-label">05 · Documents</span>
+        <h2 class="section-title">Research Documents</h2>
+      </div>
+      <div class="docs-filter-area">
+        <div class="filter-label">Filter by Type:</div>
+        <div class="custom-select-wrapper">
+          <select id="doc-filter" class="hidden-select">
+            <option value="all">All Deliverables</option>
+            <option value="taf">TAF Documentation</option>
+            <option value="proposals">Proposals & Reports</option>
+            <option value="progress">Research Progress</option>
+            <option value="reports">Final Reports</option>
+            <option value="outcomes">Research Outcomes</option>
+          </select>
+          <div class="custom-select">
+            <div class="custom-select-trigger">
+              <span>All Deliverables</span>
+              <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="all">All Deliverables</span>
+              <span class="custom-option" data-value="taf">TAF Documentation</span>
+              <span class="custom-option" data-value="proposals">Proposals & Reports</span>
+              <span class="custom-option" data-value="progress">Research Progress</span>
+              <span class="custom-option" data-value="reports">Final Reports</span>
+              <span class="custom-option" data-value="outcomes">Research Outcomes</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="divider"></div>
+    <p class="section-sub">
+      Download official research deliverables, presentations, and supporting materials.
+    </p>
 
     <div class="docs-grid">
       <!-- 01. Architecture & Design -->
-      <div class="docs-category-title">01. TAF Document</div>
+      <div class="docs-category-title" data-category="taf">01. TAF Document</div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="taf">
         <span class="doc-type">Technical Doc</span>
         <h4>TAF Document</h4>
         <p>Comprehensive Technical Analysis Framework (TAF) document detailing the core architecture and system specifications.</p>
@@ -502,9 +531,9 @@
       </div>
 
       <!-- 02. Project Proposals -->
-      <div class="docs-category-title">02. Project Proposals & Reports</div>
+      <div class="docs-category-title" data-category="proposals">02. Project Proposals & Reports</div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="proposals">
         <span class="doc-type">Presentation</span>
         <h4>Proposal Presentation</h4>
         <p>Presentation slides from the initial project proposal defense, outlining the research scope and planned methodology.</p>
@@ -517,7 +546,7 @@
         </div>
       </div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="proposals">
         <span class="doc-type">Proposal Report</span>
         <h4>Proposal Report - IT22064622</h4>
         <p>Individual research proposal report detailing module-specific objectives and implementation strategy for member IT22064622.</p>
@@ -530,7 +559,7 @@
         </div>
       </div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="proposals">
         <span class="doc-type">Proposal Report</span>
         <h4>Proposal Report - IT22070876</h4>
         <p>Individual research proposal report detailing module-specific objectives and implementation strategy for member IT22070876.</p>
@@ -543,7 +572,7 @@
         </div>
       </div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="proposals">
         <span class="doc-type">Proposal Report</span>
         <h4>Proposal Report - IT22078728</h4>
         <p>Individual research proposal report detailing module-specific objectives and implementation strategy for member IT22078728.</p>
@@ -556,7 +585,7 @@
         </div>
       </div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="proposals">
         <span class="doc-type">Proposal Report</span>
         <h4>Proposal Report - IT22177650</h4>
         <p>Individual research proposal report detailing module-specific objectives and implementation strategy for member IT22177650.</p>
@@ -570,9 +599,9 @@
       </div>
 
       <!-- 03. Research Progress -->
-      <div class="docs-category-title">03. Research Progress</div>
+      <div class="docs-category-title" data-category="progress">03. Research Progress</div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="progress">
         <span class="doc-type">Progress Report</span>
         <h4>Progress Presentation I</h4>
         <p>Slides and supporting report from the first evaluation milestone, including initial design concepts and literature review outcomes.</p>
@@ -585,7 +614,7 @@
         </div>
       </div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="progress">
         <span class="doc-type">Progress Report</span>
         <h4>Progress Presentation II</h4>
         <p>Second evaluation report covering completed modules, preliminary test results, and refined system architecture.</p>
@@ -598,10 +627,65 @@
         </div>
       </div>
 
-      <!-- 04. Research Outcomes -->
-      <div class="docs-category-title">04. Research Outcomes</div>
+      <!-- 04. Individual Final Reports -->
+      <div class="docs-category-title" data-category="reports">04. Individual Final Reports</div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="reports">
+        <span class="doc-type">Final Report</span>
+        <h4>Final Report - IT22177650</h4>
+        <p>Individual final research report documenting complete module development and findings for member IT22177650.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PDF · 1.1 MB</span>
+          <a href="./assets/IT22177650 - fnial report.pdf" class="btn-download" download aria-label="Download Final Report IT22177650">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-category="reports">
+        <span class="doc-type">Final Report</span>
+        <h4>Final Report - IT22078728</h4>
+        <p>Individual final research report documenting complete module development and findings for member IT22078728.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PDF · 1.3 MB</span>
+          <a href="./assets/IT22078728 - final report.pdf" class="btn-download" download aria-label="Download Final Report IT22078728">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-category="reports">
+        <span class="doc-type">Final Report</span>
+        <h4>Final Report - IT22070876</h4>
+        <p>Individual final research report documenting complete module development and findings for member IT22070876.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PDF · 1.9 MB</span>
+          <a href="./assets/IT22070876 - final report.pdf" class="btn-download" download aria-label="Download Final Report IT22070876">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card" data-category="reports">
+        <span class="doc-type">Final Report</span>
+        <h4>Final Report - IT22064622</h4>
+        <p>Individual final research report documenting complete module development and findings for member IT22064622.</p>
+        <div class="doc-footer">
+          <span class="doc-size">PDF · 1.2 MB</span>
+          <a href="./assets/IT22064622 - final report.pdf" class="btn-download" download aria-label="Download Final Report IT22064622">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>
+      </div>
+
+      <!-- 05. Research Outcomes -->
+      <div class="docs-category-title" data-category="outcomes">05. Research Outcomes</div>
+
+      <div class="doc-card" data-category="outcomes">
         <span class="doc-type">Research Paper</span>
         <h4>Research Paper – Conference</h4>
         <p>Peer-reviewed paper submitted to ICHORA2026 presenting and preliminary evaluation findings.</p>
@@ -614,7 +698,7 @@
         </div>
       </div>
 
-      <div class="doc-card">
+      <div class="doc-card" data-category="outcomes">
         <span class="doc-type">Final Thesis</span>
         <h4>Final Research Thesis</h4>
         <p>Complete research thesis documenting the full study — background, methodology, implementation, evaluation, and conclusions.</p>
@@ -946,11 +1030,15 @@
       Faculty of Computing
     </p>
     <p style="margin-top:6px;">
-      Built with purpose — for every child, of every ability.
+      Built with purpose. For every child, of every ability.
     </p>
   </div>
 </footer>
 
-<script src="script.js"></script>
+  <a href="#home" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>

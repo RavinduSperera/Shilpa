@@ -23,8 +23,16 @@ themeToggle.addEventListener('click', () => {
 
 /* ── Navbar scroll effect ──────────────────── */
 const navbar = document.getElementById('navbar');
+const backToTop = document.getElementById('back-to-top');
+
 window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 40);
+  const scrolled = window.scrollY > 40;
+  navbar.classList.toggle('scrolled', scrolled);
+  
+  if (backToTop) {
+    backToTop.classList.toggle('visible', window.scrollY > 500);
+  }
+  
   highlightNavLink();
 });
 
@@ -160,6 +168,9 @@ document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
         
         options.forEach(opt => opt.classList.remove('selected'));
         this.classList.add('selected');
+        
+        // Trigger change event for filtering logic
+        hiddenSelect.dispatchEvent(new Event('change'));
       }
       select.classList.remove('open');
     });
@@ -173,3 +184,29 @@ document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
 });
 
 lucide.createIcons();
+
+/* ── Documents Filter ───────────────────────── */
+const docFilter = document.getElementById('doc-filter');
+const docGridItems = document.querySelectorAll('.doc-card, .docs-category-title');
+
+if (docFilter) {
+  docFilter.addEventListener('change', function() {
+    const category = this.value;
+    
+    docGridItems.forEach(item => {
+      if (category === 'all' || item.dataset.category === category) {
+        item.classList.remove('hidden');
+        // Trigger small entrance animation
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(12px)';
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+          item.style.transition = 'all 0.4s ease';
+        }, 10);
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  });
+}
