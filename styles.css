@@ -429,6 +429,48 @@ html.dark-mode .moon-icon {
 }
 .stat-label { font-size: 0.8rem; color: var(--text-muted); font-weight: 400; }
 
+.stat-label { font-size: 0.8rem; color: var(--text-muted); font-weight: 400; }
+
+/* ── Vision & Mission (Mini) ───────────────── */
+.intro-vision-mission {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.vision-card-mini {
+  background: var(--bg-card);
+  border: 1px solid rgba(var(--accent-rgb), 0.15);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.vision-card-mini:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+.vision-icon-mini {
+  width: 44px; height: 44px;
+  background: rgba(var(--accent-rgb), 0.1);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+.vision-icon-mini .icon { width: 20px; height: 20px; }
+.vision-content h3 {
+  font-size: 1.05rem;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.vision-content p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
 /* ── Domain ────────────────────────────────── */
 #domain { background: var(--bg-main); }
 .domain-grid {

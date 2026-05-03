@@ -99,7 +99,7 @@ const staggerObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       const cards = entry.target.querySelectorAll(
-        '.provide-card, .doc-card, .tool-card, .member-card, .domain-card, .stat-card, .achieve-card'
+        '.provide-card, .doc-card, .tool-card, .member-card, .domain-card, .stat-card, .achieve-card, .vision-card-mini'
       );
       cards.forEach((card, i) => {
         card.style.opacity = '0';
@@ -116,7 +116,7 @@ const staggerObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 
 document.querySelectorAll(
-  '.provide-grid, .docs-grid, .tools-grid, .team-grid, .domain-grid, .intro-stats, .achieve-list'
+  '.provide-grid, .docs-grid, .tools-grid, .team-grid, .domain-grid, .intro-stats, .achieve-list, .intro-vision-mission'
 ).forEach(el => staggerObserver.observe(el));
 
 /* ── Contact form ───────────────────────────── */
