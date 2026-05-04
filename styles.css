@@ -1072,10 +1072,39 @@ html.dark-mode .moon-icon {
 .form-group textarea { resize: vertical; min-height: 130px; }
 .form-group select option { background: var(--bg-card); }
 .form-success {
-  display: none;
-  text-align: center; padding: 20px;
-  color: #4ade80;
+  position: fixed;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  border-radius: 100px;
+  padding: 14px 28px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-success span {
+  color: var(--text-main);
   font-weight: 500;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+html.dark-mode .form-success {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
+.form-success.show {
+  top: 90px;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* ── Footer ────────────────────────────────── */

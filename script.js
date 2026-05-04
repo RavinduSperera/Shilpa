@@ -149,8 +149,15 @@ if (form) {
     .then(response => response.json())
     .then(data => {
       if (data.success === "true" || data.success === true) {
-        form.style.display = 'none';
-        document.getElementById('formSuccess').style.display = 'block';
+        form.reset();
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+        
+        const successPopup = document.getElementById('formSuccess');
+        successPopup.classList.add('show');
+        setTimeout(() => {
+          successPopup.classList.remove('show');
+        }, 4000);
       } else {
         if (window.location.protocol === 'file:') {
             alert("FormSubmit requires a web server to work. Please open this project using VS Code 'Live Server' or a local web server instead of double-clicking the HTML file.");
