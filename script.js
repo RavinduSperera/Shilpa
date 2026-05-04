@@ -138,7 +138,7 @@ if (form) {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    fetch("https://formsubmit.co/ajax/sathsara360@gmail.com", {
+    fetch("https://formsubmit.co/ajax/7f70b8862c9227e3dda51b0433761281", {
       method: "POST",
       headers: { 
         'Content-Type': 'application/json',
