@@ -124,14 +124,53 @@ const form = document.getElementById('contactForm');
 if (form) {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
+    
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
     const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
     btn.textContent = 'Sending…';
     btn.disabled = true;
 
-    setTimeout(() => {
-      form.style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
-    }, 1200);
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch("https://formsubmit.co/ajax/sathsara360@gmail.com", {
+      method: "POST",
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success === "true" || data.success === true) {
+        form.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      } else {
+        if (window.location.protocol === 'file:') {
+            alert("FormSubmit requires a web server to work. Please open this project using VS Code 'Live Server' or a local web server instead of double-clicking the HTML file.");
+        } else {
+            alert("Oops! Something went wrong: " + (data.message || "Please try again."));
+        }
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }
+    })
+    .catch(error => {
+      console.error(error);
+      if (window.location.protocol === 'file:') {
+        alert("FormSubmit requires a web server to work. Please open this project using VS Code 'Live Server' or a local web server instead of double-clicking the HTML file.");
+      } else {
+        alert("Oops! Something went wrong. Please check your internet connection.");
+      }
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+    });
   });
 }
 
