@@ -154,19 +154,10 @@ p  { font-size: 1rem; color: var(--text-muted); font-weight: 300; }
   height: 100%;
 }
 .logo-img {
-  display: none;
+  display: block;
   flex-shrink: 0;
   height: auto;
   width: 75px;
-}
-.nav-logo .logo-light {
-  display: block;
-}
-html.dark-mode .nav-logo .logo-light {
-  display: none;
-}
-html.dark-mode .nav-logo .logo-dark {
-  display: block;
 }
 .nav-logo .logo-dot {
   width: 32px; height: 32px;
